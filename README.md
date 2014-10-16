@@ -1,6 +1,3 @@
-[![Build Status](https://travis-ci.org/alyssafrazee/ballgown.svg?branch=master)](https://travis-ci.org/alyssafrazee/ballgown)
-
-
 # Introduction
 Ballgown is a software package designed to facilitate flexible differential expression analysis of RNA-seq data. 
 
