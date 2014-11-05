@@ -1,7 +1,7 @@
 Package: ballgown
 Maintainer: Alyssa Frazee <alyssa.frazee@gmail.com>
 Author: Alyssa C. Frazee, Andrew E. Jaffe, Leonardo Collado-Torres, Jeffrey T. Leek
-Version: 1.1.1
+Version: 1.0.1
 License: Artistic-2.0
 Title: Flexible, isoform-level differential expression analysis
 Description: Tools for statistical analysis of assembled transcriptomes,
@@ -23,7 +23,6 @@ Imports:
     GenomeInfoDb
 Suggests:
     testthat,
-    knitr,
-    knitcitations
+    knitr
 VignetteBuilder: knitr
 biocViews: RNASeq, StatisticalMethod, Preprocessing, DifferentialExpression
