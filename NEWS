@@ -1,3 +1,8 @@
+New in version 1.0.1, 5 November 2014:
+    * bug fix in constructor function: quotes in input files from tablemaker are now properly read in.
+
+Version 0.99.7 was moved into bioc-release and became version 1.0.0. 
+
 New in version 0.99.7, 7 October 2014:
     * new methods for accessing gene and transcript names and IDs
     * development package (on GitHub) now has Travis CI integration, so the package's is built/tested with every new push and a status image is visible on the package README
