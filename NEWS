@@ -1,3 +1,10 @@
+New in version 1.0.3, 23 February 2015:
+    * clarification of docs/warning messages when "time" variable has too few timepoints to fit natural splines
+    * bug fix in subset function: factor levels that don't appear in subset pData are now dropped
+
+New in version 1.0.2, 20 February 2015:
+    * bug fix in plotting of single-transcript genes
+
 New in version 1.0.1, 5 November 2014:
     * bug fix in constructor function: quotes in input files from tablemaker are now properly read in.
 
