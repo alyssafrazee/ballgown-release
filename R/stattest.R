@@ -208,14 +208,27 @@ stattest = function(gown = NULL, gowntable = NULL, pData = NULL, mod = NULL,
         ## extract the covariate
         x = pData[,colind]
                 
-        # make sure there are at least 2 reps per group:
+        ## make sure there are at least 2 reps per group:
         if(any(table(x) < 2) & !timecourse){
             stop(.makepretty('There must be at least two replicates per group.
                 Make sure covariate is categorical; if continuous, consider the
                 timecourse option, or specify your own models with mod and
                 mod0.'))
         }
-
+                
+        ## make sure time variable is truly continuous:
+        ## (if not, continue using it just as "important")
+        if(timecourse){
+            n_unique_times = length(table(x))
+            if(n_unique_times <= df){
+                warning(paste0('Not enough timepoints (or values of', 
+                    ' covariate) to fit a spline model with ', df, ' degrees ',
+                    'of freedom. Statistical tests will be run treating time',
+                    ' as categorical. You can also re-run the analysis with ',
+                    'decreased df.'))
+                timecourse = FALSE
+            }
+        }
 
         ## create model matrices
         if(!is.null(adjustvars)){
