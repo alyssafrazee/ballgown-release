@@ -18,6 +18,7 @@ Two sample pipelines for preprocessing are as follows:
   2. _Cufflinks_ [<a href="http://dx.doi.org/10.1038/nbt.1621">Trapnell et al. (2010)</a>] also assembles transcriptomes from RNA-Seq data and quantifies their expression. Sample command: 
   ` cufflinks -g reference.gff -o outputDirectory accepted_hits.bam `
   3. _Tablemaker_ calls _Cufflinks_ to estimate feature expressions in a Ballgown readable format. _Tablemaker_ access and instructions can be found [here](https://github.com/leekgroup/tablemaker).  
+
 # Installation
 Ballgown is [available via Bioconductor](http://bioconductor.org/packages/devel/bioc/html/ballgown.html).  
 
